@@ -175,9 +175,9 @@ h2 {
      transform: translateY(-100%);
          }
     
-    #highlight:after {
-         bottom: 1px;
-          transform: translateY(100%) rotate(180deg);  
+    #highlights:after {
+    bottom: 1px;
+    transform: translateY(100%) rotate(180deg);  
     }
 
     .highlight__wrapper {
