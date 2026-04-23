@@ -229,11 +229,13 @@ h2 {
 
    .books {
     display: flex;
+    flex-wrap: nowrap;
        }
 
    .book {
-    width: calc(25%-48px);
+    width: 25%;
     padding: 24px;
+    box-sizing: border-box;
    }
 
    .book__img {
