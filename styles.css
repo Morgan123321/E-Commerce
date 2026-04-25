@@ -115,6 +115,10 @@ li {
     opacity: 1;
 }
 
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
 .menu__links {
     display: flex;
     flex-direction: column;
@@ -259,6 +263,7 @@ h2 {
 
     .highlight__wrapper {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .highlight {
@@ -266,7 +271,6 @@ h2 {
         width: calc(100% / 3);
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
     }
     
@@ -291,6 +295,7 @@ h2 {
     .highlight__subtitle {
         font-size: 20px;
         margin-bottom: 16px;
+        text-align: center;
     }
     /*
 
@@ -394,15 +399,48 @@ h2 {
    padding: 0 8px;
    }
 
-   @media (max-width 550px) {
-    .nav__links {
-        display: none;
+   /* SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+
+   /*SMALL PHONES, LARGE SMARTPHONES*/
+@media (max-width: 768px) {
+    .header__description {
+    padding: 0 24;
     }
 
+    h1{
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+    .book {
+        width: 50%;
+    }
+}
+
+   @media (max-width: 550px) {
     .btn__menu {
         display: block;
     }
+
+    .nav__links {
+    display: none;
+        }
+
+    .highlight {
+        width: 100%;
+            }    
+    .highlight:not(:last-child) {
+        
+    }
    }
+
+   
 
 
    
